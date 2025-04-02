@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+
+
+
+
+
+body {
+ 
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Enhanced 3D perspective */
+.perspective-container {
+  perspective: 1000px;
+}
+
+.transform-3d {
+  transform-style: preserve-3d;
+}
+
+/* Card styling */
+.project-card {
+  backface-visibility: hidden;
+  transform-origin: center center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card-slider {
+    height: 50vh;
+  }
+  
+  .project-info {
+    height: 30%;
+  }
+}
+/* Custom scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Project card styling */
+.project-card {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+/* Breadcrumb animations */
+.breadcrumb-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.breadcrumb-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease-out;
+}
+
+/* Technology tag animations */
+.tech-tag {
+  transform-origin: left center;
+}
+/* Enhanced 3D perspective */
+.perspective-container {
+  perspective: 1000px;
+}
+
+.transform-3d {
+  transform-style: preserve-3d;
+}
+
+/* Card styling */
+.project-card {
+  backface-visibility: hidden;
+  transform-origin: center center;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Active card glow effect */
+.active-card {
+  box-shadow: 0 0 30px rgba(6, 182, 212, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card-slider {
+    height: 50vh;
+  }
+  
+  .project-info {
+    height: 40%;
+    padding-top: 2rem;
+  }
+  
+  .project-card {
+    width: 85%;
+  }
+}
